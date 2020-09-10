@@ -1,0 +1,3 @@
+student name: Floris Beentjes
+Student number: 666792
+Student class: INVVT1C-1
