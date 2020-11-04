@@ -43,12 +43,11 @@
 		</nav>
 		
 		<fieldset>
+			<legend>Contact:</legend>	
 			<form
 				action = "http://i-want-solar-energy.com/testform.php"
 				method = "post"
-			>
-			
-			<legend>Contact:</legend>			
+			>		
 			<label for = "fullname">Uw naam</label>
 			<input 
 				type = "text"
@@ -62,6 +61,7 @@
 				id = "emailaddress"
 				name = "email"
 				placeholder = "Your emailaddress"
+				value = "email"
 			>				
 			<label for = "fullname">Uw bericht</label>
 			<input 
@@ -72,35 +72,48 @@
 			>	
 			<input 
 				type = "submit"
-				value = "Submit"
+				value = "submit"
 			>			
 			</form>
 		</fieldset>
 		
 		<aside>
-			<a href="https://www.ikwilzonneenergie.nl/">
-				<img 
+			<figure>
+				<a href="https://www.ikwilzonneenergie.nl/">
+					<img 
 						src = "img/SMASunnyTripower.jpg"
 						title = "SMASunnyTripower"
 						alt = "Een foto van de SMASunnyTripower"
 					/>
-			</a>
-			
-			<a href="https://www.ikwilzonneenergie.nl/">
-				<img 
+				</a>
+				<figcaption>
+					&copy;SMA.de
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="https://www.ikwilzonneenergie.nl/">
+					<img 
 						src = "img/VictronChargeController.jpg"
 						title = "Victron ChargeController"
 						alt = "Een foto van de Victron ChargeController"
 					/>	
-			</a>
-			
-			<a href="https://www.ikwilzonneenergie.nl/">
-				<img 
+				</a>
+				<figcaption>
+					&copy;VictronEnergy
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="https://www.ikwilzonneenergie.nl/">
+					<img 
 						src = "img/VictronEnergyBatterij.png"
 						title = "VictronEnergy batterijr"
 						alt = "Een foto van een VictronEnergy batterij"
-					/>	
-			</a>
+					/>
+				</a>
+				<figcaption>
+					&copy;VictronEnergy
+				</figcaption>
+			</figure>
 		</aside>
 			
 		<section>
@@ -110,7 +123,7 @@
 		</section>
 		
 		<footer>
-		&copy;2020 Floris Beentjes
+			<em>&copy;2020 Floris Beentjes</em>
 		</footer>
 
 	</body>
