@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang = "nl">
 	<!-- Head -->
 	<head>
 	<meta charset = "utf-8">
 	<meta name = "keywords" content = "Harrems Zonnepanelen"/>
-	<meta name = "description" content = "This is a page describing how solar energy works"/>
+	<meta name = "description" content = "This is containing a contact form"/>
 	<meta name = "author" content = "Floris Beentjes"/>
 	
-	<title>Hoe werkt zonne-energie</title>
+	<title>Contact</title>
 	</head>
 	
 	<body>	
@@ -31,16 +31,51 @@
 		<nav>
 			<ul>
 				<li>
-					<a href = "index.html" target = "_ self">Home</a>
+					<a href = "index.html">Home</a>
 				</li>
 				<li>
-					<a href = "howsolarworks.html" target = "_ self">Hoe werkt zonne-energie?</a>
+					<a href = "howsolarworks.html">Hoe werkt zonne-energie?</a>
 				</li>
 				<li>
-					<a href = "eusolar.html" target = "_ self">Hoeveel zonne-energie produceert Europa?</a>
+					<a href = "eusolar.html">Hoeveel zonne-energie produceert Europa?</a>
 				</li>
 			</ul>
 		</nav>
+		
+		<fieldset>
+			<form
+				action = "http://i-want-solar-energy.com/testform.php"
+				method = "post"
+			>
+			
+			<legend>Contact:</legend>			
+			<label for = "fullname">Uw naam</label>
+			<input 
+				type = "text"
+				id = "fullname"
+				name = "name"
+				placeholder = "Your name"
+			>			
+			<label for = "fullname">Uw emailadres:</label>
+			<input
+				type = "email"
+				id = "emailaddress"
+				name = "email"
+				placeholder = "Your emailaddress"
+			>				
+			<label for = "fullname">Uw bericht</label>
+			<input 
+				type = "text"
+				id = "fullmessage"
+				name = "message"
+				placeholder = "Your message"
+			>	
+			<input 
+				type = "submit"
+				value = "Submit"
+			>			
+			</form>
+		</fieldset>
 		
 		<aside>
 			<a href="https://www.ikwilzonneenergie.nl/">
