@@ -6,6 +6,7 @@
 	<meta name = "keywords" content = "Harrems Zonnepanelen"/>
 	<meta name = "description" content = "This is the homepage of Harrems Zonnepanelen"/>
 	<meta name = "author" content = "Floris Beentjes"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link 
 	rel = "stylesheet"
 	type = "text/css"
@@ -16,7 +17,7 @@
 	</head>
 	
 	<body>	
-		<header>
+		<header id = "flexheader">
 			<img 
 				src = "img/LogoWebmarkup1.1.png"
 				title = "Harrems Zonnepanelen"
@@ -32,21 +33,31 @@
 			</h2>
 		</header>
 		
-		<nav>
-			<ul>
-				<li>
-					<a href = "howsolarworks.html">Hoe werkt zonne-energie?</a>
-				</li>
-				<li>
-					<a href = "eusolar.html">Hoeveel zonne energie produceert Europa?</a>
-				</li>
-				<li>
-					<a href = "contact.html">Contact</a>
-				</li>
-			</ul>
+		<nav id = "flexnav">
+			<label 
+				for = "hamburger"
+				id = "hamlbl">
+				&#9776;
+			</label>
+			<input
+				type = "checkbox"
+				id = "hamburger"
+			/>
+				
+				<ul>
+					<li>
+						<a href = "howsolarworks.html">Hoe werkt zonne-energie?</a>
+					</li>
+					<li>
+						<a href = "eusolar.html">Hoeveel zonne energie produceert Europa?</a>
+					</li>
+					<li>
+						<a href = "contact.html">Contact</a>
+					</li>
+				</ul>
 		</nav>
 		
-		<figure>
+		<figure id = "video">
 			<video autoplay loop>
 				<source src="mp4/WhatisSolarPower.mp4" type="video/mp4">
 				<source src="mp4/WhatisSolarPower.ogg" type="video/ogg">
@@ -58,7 +69,7 @@
 			
 		</figure>
 		
-		<section>
+		<section id = "flexarticles">
 			<article>
 				<header>
 					<h2>
@@ -150,7 +161,7 @@
 			</article>	
 		</section>
 		
-		<aside>
+		<aside id = "flexaside">
 			<h2>
 				Why Solar energy?
 			</h2>
@@ -174,13 +185,12 @@
 			</ol>
 		</aside>
 		
-		<section>
-			<h4>
-				Wij gebuiken cookies om onze site beter te laten werken		
-			</h4>
-		</section>
-		
-		<footer>
+		<footer id = "flexfooter">
+			<section>
+				<h4>
+					Wij gebuiken cookies om onze site beter te laten werken		
+				</h4>
+			</section>
 			<p>
 				<em>&copy;2020 Floris Beentjes</em>
 			</p>
