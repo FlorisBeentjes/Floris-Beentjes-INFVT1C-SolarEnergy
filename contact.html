@@ -52,63 +52,48 @@
 				action = "http://i-want-solar-energy.com/testform.php"
 				method = "post"
 			>	
-			<section class = "name-form">
-			<input 
-				type = "text"
-				id = "fullname"
-				name = "name"
-				placeholder = "Your name"
-				autocomplete = "off"
-				required
-				class = "input-name"
-			>	
-			<label 
-			for = "fullname"
-			class = "lblname"
-			>
-			Uw naam
-			</label>
-			</section>
-			<section class = "email-form">
-			<input
-				type = "email"
-				id = "emailaddress"
-				name = "email"
-				placeholder = "Your emailaddress"
-				autocomplete = "off"
-				required
-				class = "input-email"
-			>		
-			<label 
-			for = "fullname"
-			class = "lblmail"
-			>
-			Uw emailadres:
-			</label>
-			</section>
 			
-			<section class = "message-form">
-			<input 
-				class = "input-message"
+			<label class = "custominput">
+				<input 
 				type = "text"
-				id = "fullmessage"
-				name = "message"
-				placeholder = "Your message"
-				autocomplete = "off"
-				required
-			>	
-			<label 
-			for = "fullname"
-			class = "lblmessage"
-			>
-			Uw bericht
+				name = "name"
+				id = "emai"
+				required>
+				<section 
+				class = "placeholder">Naam
+				</section>
+				</input>
 			</label>
+			
+			<label class = "custominput">
+				<input 
+				type = "email"
+				name = "name"
+				id = "email"
+				required>				
+				<section 
+				class = "placeholder">Emailadres
+				</section>
+				</input>
+			
+			</label>
+			
+			<label class = "messageinput">
+				<input 
+				type = "text"
+				name = "message"
+				id = "message"
+				required>
+				<section 
+				class = "messageplaceholder">Bericht
+				</section>
+				</input>
+			</label>
+			
 			<input
-				class = "submit-button"
 				type = "submit"
-				value = "submit"
-			>			
-			</section>
+				value = "Submit"
+			>
 			</form>
 		</fieldset>
 		
