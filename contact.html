@@ -6,7 +6,11 @@
 	<meta name = "keywords" content = "Harrems Zonnepanelen"/>
 	<meta name = "description" content = "This is containing a contact form"/>
 	<meta name = "author" content = "Floris Beentjes"/>
-	
+	<link 
+	rel = "stylesheet" 
+	type = "text/css"
+	href = "css/stylesheet.css"
+	/>
 	<title>Contact</title>
 	</head>
 	
@@ -14,7 +18,7 @@
 		
 		<header>
 			<img 
-				src = "img/LogoWebmarkup1.1.jpg"
+				src = "img/LogoWebmarkup1.1.png"
 				title = "Harrems Zonnepanelen"
 				alt = "The logo of Harrems Zonnepanelen"
 			/>
@@ -47,33 +51,64 @@
 			<form
 				action = "http://i-want-solar-energy.com/testform.php"
 				method = "post"
-			>		
-			<label for = "fullname">Uw naam</label>
+			>	
+			<section class = "name-form">
 			<input 
 				type = "text"
 				id = "fullname"
 				name = "name"
 				placeholder = "Your name"
-			>			
-			<label for = "fullname">Uw emailadres:</label>
+				autocomplete = "off"
+				required
+				class = "input-name"
+			>	
+			<label 
+			for = "fullname"
+			class = "lblname"
+			>
+			Uw naam
+			</label>
+			</section>
+			<section class = "email-form">
 			<input
 				type = "email"
 				id = "emailaddress"
 				name = "email"
 				placeholder = "Your emailaddress"
-				value = "email"
-			>				
-			<label for = "fullname">Uw bericht</label>
+				autocomplete = "off"
+				required
+				class = "input-email"
+			>		
+			<label 
+			for = "fullname"
+			class = "lblmail"
+			>
+			Uw emailadres:
+			</label>
+			</section>
+			
+			<section class = "message-form">
 			<input 
+				class = "input-message"
 				type = "text"
 				id = "fullmessage"
 				name = "message"
 				placeholder = "Your message"
+				autocomplete = "off"
+				required
 			>	
-			<input 
+			<label 
+			for = "fullname"
+			class = "lblmessage"
+			>
+			Uw bericht
+			</label>
+			<input
+				class = "submit-button"
 				type = "submit"
 				value = "submit"
 			>			
+			</section>
 			</form>
 		</fieldset>
 		
@@ -81,7 +116,7 @@
 			<figure>
 				<a href="https://www.ikwilzonneenergie.nl/">
 					<img 
-						src = "img/SMASunnyTripower.jpg"
+						src = "img/SMASunnyTripower.png"
 						title = "SMASunnyTripower"
 						alt = "Een foto van de SMASunnyTripower"
 					/>
@@ -93,7 +128,7 @@
 			<figure>
 				<a href="https://www.ikwilzonneenergie.nl/">
 					<img 
-						src = "img/VictronChargeController.jpg"
+						src = "img/VictronChargeController.png"
 						title = "Victron ChargeController"
 						alt = "Een foto van de Victron ChargeController"
 					/>	
