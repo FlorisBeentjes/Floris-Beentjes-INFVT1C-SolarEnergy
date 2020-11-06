@@ -6,7 +6,7 @@
 	<meta name = "keywords" content = "Harrems Zonnepanelen"/>
 	<meta name = "description" content = "This is the homepage of Harrems Zonnepanelen"/>
 	<meta name = "author" content = "Floris Beentjes"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link 
 	rel = "stylesheet"
 	type = "text/css"
@@ -16,7 +16,7 @@
 	<title>Harrems Zonnepanelen Homepage</title>
 	</head>
 	
-	<body>	
+	<body id = "flexbody">	
 		<header id = "flexheader">
 			<img 
 				src = "img/LogoWebmarkup1.1.png"
@@ -33,28 +33,27 @@
 			</h2>
 		</header>
 		
-		<nav id = "flexnav">
+		<nav>
 			<label 
-				for = "hamburger"
-				id = "hamlbl">
-				&#9776;
+			for="hamburger"
+			id="burgericon">
+			&#9776;
 			</label>
-			<input
-				type = "checkbox"
-				id = "hamburger"
+			<input 
+			type="checkbox" 
+			id="hamburger"
 			/>
-				
-				<ul>
-					<li>
-						<a href = "howsolarworks.html">Hoe werkt zonne-energie?</a>
-					</li>
-					<li>
-						<a href = "eusolar.html">Hoeveel zonne energie produceert Europa?</a>
-					</li>
-					<li>
-						<a href = "contact.html">Contact</a>
-					</li>
-				</ul>
+			<ul>
+				<li>
+					<a href = "howsolarworks.html">Hoe werkt zonne-energie?</a>
+				</li>
+				<li>
+					<a href = "eusolar.html">Hoeveel zonne energie produceert Europa?</a>
+				</li>
+				<li>
+					<a href = "contact.html">Contact</a>
+				</li>
+			</ul>
 		</nav>
 		
 		<figure id = "video">
@@ -70,7 +69,7 @@
 		</figure>
 		
 		<section id = "flexarticles">
-			<article>
+			<article id = "flexart1">
 				<header>
 					<h2>
 						SMA SB3.6 Solar panels inverter 1 phase
@@ -100,7 +99,7 @@
 				</footer>
 			</article>
 			
-			<article>
+			<article id = "flexart2">
 				<header>
 					<h2>
 						Victron SmartSolar MPPT 150-35 12V 24V 48V charge controller
@@ -130,7 +129,7 @@
 				</footer>
 			</article>
 			
-			<article>
+			<article id = "flexart3">
 				<header>
 					<h2>
 						Victron AGM Super Cycle battery 12V 100Ah
@@ -186,14 +185,15 @@
 		</aside>
 		
 		<footer id = "flexfooter">
-			<section>
-				<h4>
-					Wij gebuiken cookies om onze site beter te laten werken		
-				</h4>
-			</section>
 			<p>
 				<em>&copy;2020 Floris Beentjes</em>
 			</p>
+			<section>
+				<h4>
+					Cookie Statement	
+				</h4>
+			</section>
+			
 		</footer>
 	</body>
 </html>
