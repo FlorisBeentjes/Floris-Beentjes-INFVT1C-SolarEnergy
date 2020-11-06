@@ -15,9 +15,9 @@
 	<title>Hoe werkt zonne-energie</title>
 	</head>
 	
-	<body>	
+	<body id = "gridcontainer">	
 		
-		<header>
+		<header id = "gridhead">
 			<img 
 				src = "img/LogoWebmarkup1.1.png"
 				title = "Harrems Zonnepanelen"
@@ -33,25 +33,34 @@
 			</h2>
 		</header>
 		
-		<nav>
+		<nav id = "gridnav">
+			<label 
+			for="hamburger"
+			id="burgericon">
+			&#9776;
+			</label>
+			<input 
+			type="checkbox" 
+			id="hamburger"
+			/>
 			<ul>
-				<li>
+				<li id = "grlink1">
 					<a href = "index.html">Home</a>
 				</li>
-				<li>
-					<a href = "eusolar.html">Hoeveel zonne-energie produceert Europa?</a>
+				<li id = "grlink2">
+					<a href = "howsolarworks.html">Hoeveel zonne-energie produceert Europa?</a>
 				</li>
-				<li>
-					<a href = "contact.html">Contact</a>
+				<li id = "grlink3">
+					<a href = "eusolar.html">Contact</a>
 				</li>
 			</ul>
 		</nav>
 		
-		<section>
+		<section id = "gridmain">
 			<h1>
 				Hoe werkt zonne-energie?
 			</h1>
-			<article>
+			<article id = "grart1">
 				<h3>
 					Zonnepanelen
 				</h3>
@@ -63,7 +72,7 @@
 				</p>
 			</article>
 				
-			<article>
+			<article id = "grart2">
 				<h3>
 					Charge Controllers
 				</h3>
@@ -75,7 +84,7 @@
 				</p>
 			</article>
 				
-			<article>
+			<article id = "grart3">
 				<h3>
 					Batterij systeem
 				</h3>
@@ -88,7 +97,7 @@
 				</p>
 			</article>
 				
-			<article>
+			<article id = "grart4">
 				<h3>
 					DC power
 				</h3>
@@ -99,7 +108,7 @@
 				</p>
 			</article>
 			
-			<article>
+			<article id = "grart5">
 				<h3>
 					Inverter
 				</h3>
@@ -110,7 +119,7 @@
 				</p>
 			</article>
 				
-			<article>
+			<article id = "grart6">
 				<h3>
 					AC power
 				</h3>
@@ -122,8 +131,11 @@
 			</article>
 		</section>
 		
-		<aside>
-		<figure>
+		<aside id = "gridaside">
+		<h2>
+			Bekijk onze producten:
+		</h2>
+		<figure id = "gridfig1">
 			<a href="https://www.ikwilzonneenergie.nl/">
 				<img 
 						src = "img/SMASunnyTripower.png"
@@ -134,8 +146,8 @@
 				<figcaption>
 					&copy;SMA.de
 				</figcaption>
-			</figure>
-			<figure>
+		</figure>
+		<figure id = "gridfig2">
 			<a href="https://www.ikwilzonneenergie.nl/">
 				<img 
 						src = "img/VictronChargeController.png"
@@ -146,8 +158,8 @@
 				<figcaption>
 					&copy;VictronEnergy
 				</figcaption>
-			</figure>
-			<figure>
+		</figure>
+		<figure id = "gridfig3">
 			<a href="https://www.ikwilzonneenergie.nl/">
 				<img 
 					src = "img/VictronEnergyBatterij.png"
@@ -161,14 +173,15 @@
 			</figure>
 		</aside>	
 			
-		<section>
-			<h4>
-				Wij gebuiken cookies om onze site beter te laten werken
-			</h4>
-		</section>
-		
-		<footer>
-			<em>&copy;2020 Floris Beentjes</em>
+		<footer id = "gridfooter">
+			<p>
+				<em>&copy;2020 Floris Beentjes</em>
+			</p>
+			<section>
+				<h4>
+					Cookie Statement	
+				</h4>
+			</section>
 		</footer>
 
 	</body>
