@@ -130,13 +130,342 @@ body{
 
 
 @media screen and (min-width: 481px) and (max-width: 1179px) {
+	#hamburger{
+		display: none;
+	}
+	#burgericon{
+		display: none;
+	}
 	
+	header img{
+		width: 25%;
+		height: auto;
+	}
+	
+	#video{
+		order: 2;
+	}
+	
+	#flexbody{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#flexheader{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		font-family: "notableregular", Arial, sans-serif;
+		order: 0;
+	}
+	
+	ul{
+		display: flex;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border-top: 1px #000 solid;
+		border-bottom: 1px #000 solid;
+	}
+	
+	li{
+		padding-right: 25px;
+		padding-left: 5px;
+	}
+	
+	ul a:link{
+		color:black;
+		text-decoration: none;
+	}
+	
+	ul a:visited{
+		color:black;
+		text-decoration: none;
+	}
+	
+	ul a:hover{
+		color:black;
+		text-decoration: none;
+	}
+	
+	ul a:active{
+		color:black;
+		text-decoration: none;
+	}
+		
+	#flexarticles{
+		display: flex;
+		flex-direction: column;
+		order: 2;
+	}
+	
+	#flexart1{
+		order: 2;
+	}
+	#flexart2{
+		order: 1;
+	}
+	#flexart3{
+		order: 0;
+	}
+	
+	#flexart1 footer{
+		padding-left: 10%;
+	}
+	#flexart2 footer{
+		padding-left: 10%;
+	}
+	#flexart3 footer{
+		padding-left: 10%;
+	}
+	
+	#flexarticles img{
+		width: 25%;
+		float: left;
+	}
+	
+	.flexart {
+		display: flex; 
+		align-items: flex-end;
+	}
+	
+	.flexartext{
+		order: 1;
+		width: 70%;
+		float: right;
+		padding-top: 20px;
+		border-top: 1px #000 solid;
+	}
+	
+	.flexartfoto img{
+		order: 0;
+		width: 20%;
+		float: left;
+	}
+	
+	
+	
+	#flexaside{
+		order: 1;
+		flex-shrink: 0;
+	}
+	
+	#flexfooter{
+		display: flex;
+		order: 3;
+		border-top: 1px #000000 solid;
+		align-items: center; 		
+	}
+	
+	#flexfooter section{
+		position: fixed;
+		bottom: -14px;
+		right: 0;
+		width: 50%;
+		height: 10%;
+		padding-left: 5px;
+		z-index: 9999;
+		color: #fff;
+		background-color: #FA0;
+		opacity: 0.5;
+	}
 }
+
 
 @media screen and (min-width: 1280px) {
+	#flexheader img{
+		width: 15%;
+		height: 10%;
+	}
 	
+	#hamburger{
+		display: none;
+	}
+	#burgericon{
+		display: none;
+	}
+	
+	#flexheader{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		font-family: "notableregular", Arial, sans-serif;
+		order: 0;
+	}
+	
+	ul{
+		display: flex;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border-top: 1px #000 solid;
+		border-bottom: 1px #000 solid;
+	}
+	
+	li{
+		padding-right: 25px;
+		padding-left: 5px;
+	}
+	
+	ul a:link{
+		color:black;
+		text-decoration: none;
+	}
+	
+	ul a:visited{
+		color:black;
+		text-decoration: none;
+	}
+	
+	ul a:hover{
+		color:black;
+		text-decoration: none;
+	}
+	
+	ul a:active{
+		color:black;
+		text-decoration: none;
+	}
+	
+	#main{
+		display: flex;
+		align-items: stretch;
+		border-top: 1px #000 solid;
+	}
+	
+	.flexart {
+		display: flex; 
+	}
+	
+	.flexartext{
+		order: 1;
+		width: 70%;
+		padding: 10px;
+		float: left;
+		border-top: 1px #000 solid;
+	}
+	
+	.flexartfoto img{
+		order: 0;
+		width: 25%;
+		float: left;
+	}
+	
+	.flexcap{
+		float: right;
+	}
+	.flexfoot{
+		float: left;
+		padding-right: 100%;
+	}
+	
+	.flexol{
+		padding-bottom: 15px;
+	}
+	
+	
+	
+	#flexfooter section{
+		position: fixed;
+		bottom: -14px;
+		right: 0;
+		width: 50%;
+		height: 10%;
+		padding-left: 5px;
+		z-index: 9999;
+		color: #fff;
+		background-color: #FA0;
+		opacity: 0.5;
+	}
 }
 
+/*css code that makes the name & emailaddress boxes animated */
+.custominput{
+	position: relative;
+	font-size: 14px;
+	padding-top: 20px;
+	left: 50px;
+}
+
+.custominput input{
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background-color: #f2f2f2;
+	padding: 12px;
+	margin: 5px;
+	transition: color 0.8s ease;
+}
+
+.custominput input:valid{
+	background-color: #D5FCAD;
+}
+
+.placeholder{
+	 position: absolute;
+	 left: 12px;
+	 top: 28px;
+	 transform: translateY(-50%);
+	 color: #aaa;
+	 transition: all 0.5s ease;
+ }
+ 
+ .custominput input:valid + .placeholder,
+ .custominput input:focus + .placeholder{
+	 top: 10px;
+	 font-size: 12px;
+	 color: #222;
+ }
+
+/*and the css code for the message box*/
+.messageinput{
+	position: relative;
+	font-size: 14px;
+	height: 74px;
+	padding-top: 20px;
+	left: 50px;
+}
+.messageinput input{
+	width: 100%;
+	height: 88px;
+	top: 0px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background-color: #f2f2f2;
+	padding: 12px;
+	margin: 5px;
+	transition: color 0.8s ease;
+}
+
+.messageinput input:valid{
+	background-color: #D5FCAD;
+}
+
+.messageplaceholder{
+	 position: absolute;
+	 left: 12px;
+	 top: 28px;
+	 transform: translateY(-50%);
+	 color: #aaa;
+	 transition: all 0.5s ease;
+ }
+ .messageinput input:valid + .messageplaceholder,
+ .messageinput input:focus + .messageplaceholder{
+	 top: 10px;
+	 font-size: 12px;
+	 color: #222;
+ }
+ 
+ .submitbutton{
+	 width:80px;
+	 border: none;
+	 position: absolute;
+	 left: 90%;
+	 top: 200px;
+	 padding: 10px;
+	 
+	
+ }
 
 
 
