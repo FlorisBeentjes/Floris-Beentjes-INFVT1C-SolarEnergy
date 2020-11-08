@@ -15,9 +15,9 @@
 	<title>Contact</title>
 	</head>
 	
-	<body>	
+	<body id = "contbod">	
 		
-		<header>
+		<header id = "gridhead">
 			<img 
 				src = "img/LogoWebmarkup1.1.png"
 				title = "Harrems Zonnepanelen"
@@ -33,73 +33,86 @@
 			</h2>
 		</header>
 		
-		<nav>
+		<nav id = "gridnav">
+			<label 
+				for="hamburger"
+				id="contburgericon">
+				&#9776;
+			</label>
+			<input 
+				type="checkbox" 
+				id="hamburger"
+			/>
 			<ul>
-				<li>
+				<li id = "grlink1">
 					<a href="index.html">Home</a>
 				</li>
-				<li>
-					<a href="howsolarworks.html">Hoeveel zonne-energie produceert Europa?</a>
+				<li id = "grlink2">
+					<a href="howsolarworks.html">Hoe werkt zonne-energie?</a>
 				</li>
-				<li>
-					<a href="contact.html">Contact</a>
+				<li id = "grlink3">
+					<a href="eusolar.html">Hoeveel zonne-energie produceert Europa?</a>
 				</li>
 			</ul>
 		</nav>
 		
-		<fieldset>
+		<h2>
+			Contact
+		</h2>
+		
+		<fieldset id = "contform">
 			<legend>Contact:</legend>	
 			<form
 				action = "http://i-want-solar-energy.com/testform.php"
 				method = "post"
 			>	
+				<p>
+					Mocht u ons willen contacteren, dan verzoeken wij u om dit contact formulier in te vullen. 
+					Mocht u ons willen bellen dan kan dat op het volgende nummer: 06 123456789
+				</p>
 			
-			<label class = "custominput">
+				<label 
+					id = "nameinput"
+					for = "name">
+					Naam
+				</label>
 				<input 
-				type = "text"
-				name = "name"
-				id = "emai"
-				required>
-				<section 
-				class = "placeholder">Naam
-				</section>
-				</input>
-			</label>
-			
-			<label class = "custominput">
+					type = "text"
+					name = "name"
+					id = "name"
+					required>
+				
+				<label 
+					id = "emailinput"
+					for = "email">			
+					Emailadres
+				</label>
 				<input 
-				type = "email"
-				name = "name"
-				id = "email"
-				required>				
-				<section 
-				class = "placeholder">Emailadres
-				</section>
-				</input>
-			
-			</label>
-			
-			<label class = "messageinput">
+					type = "email"
+					name = "email"
+					id = "email"
+					required>	
+				
+				<label 
+					id = "messageinput"
+					for = "message">			
+					Bericht
+				</label>
 				<input 
-				type = "text"
-				name = "message"
-				id = "message"
-				required>
-				<section 
-				class = "messageplaceholder">Bericht
-				</section>
-				</input>
-			</label>
-			
-			<input
-				class = "submitbutton"
-				type = "submit"
-				value = "Submit"
-			>
+					type = "text"
+					name = "message"
+					id = "message"
+					required>
+				
+				<input
+					class = "submitbutton"
+					type = "submit"
+					value = "Submit"
+				>
 			</form>
 		</fieldset>
 		
-		<aside>
+		<aside id ="contaside">
 			<figure>
 				<a href="https://www.ikwilzonneenergie.nl/">
 					<img 
@@ -138,14 +151,15 @@
 			</figure>
 		</aside>
 			
-		<section>
+		
+		
+		<footer id ="contfoot">
+			<em>&copy;2020 Floris Beentjes</em>
+			<section>
 			<h4>
 				Wij gebuiken cookies om onze site beter te laten werken
 			</h4>
 		</section>
-		
-		<footer>
-			<em>&copy;2020 Floris Beentjes</em>
 		</footer>
 
 	</body>
